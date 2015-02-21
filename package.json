@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "clean": "rm -rf dist tmp",
+    "build": "npm clean && broccoli build dist",
+    "serve": "broccoli serve"
   },
   "repository": {
     "type": "git",
@@ -25,6 +27,7 @@
     "broccoli-jshint": "^0.5.3",
     "broccoli-merge-trees": "^0.2.1",
     "broccoli-react": "^0.7.0",
+    "broccoli-static-compiler": "^0.2.1",
     "chalk": "^0.5.1",
     "mocha": "^2.1.0",
     "react": "^0.12.2",
